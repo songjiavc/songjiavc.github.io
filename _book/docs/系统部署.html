@@ -1,0 +1,325 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>部署说明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="深入学习.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="快速开始.html">
+            
+                <a href="快速开始.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="环境搭建.html">
+            
+                <a href="环境搭建.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="简单使用.html">
+            
+                <a href="简单使用.html">
+            
+                    
+                    简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="深入学习.md">
+            
+                <span>
+            
+                    
+                    深入学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="系统部署.html">
+            
+                <a href="系统部署.html">
+            
+                    
+                    部署说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >部署说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x90E8;&#x7F72;&#x8BF4;&#x660E;">&#x90E8;&#x7F72;&#x8BF4;&#x660E;</h2>
+<h3 id="&#x90E8;&#x7F72;&#x7CFB;&#x7EDF;&#x8BF4;&#x660E;">&#x90E8;&#x7F72;&#x7CFB;&#x7EDF;&#x8BF4;&#x660E;</h3>
+<ol>
+<li>&#x7248;&#x672C;&#xFF1A;&#x3000;ubuntu 16.04 server 64bit.</li>
+<li>&#x7528;&#x6237;&#x540D;&#xFF1A;&#x3000;develop &#x5BC6;&#x7801;&#xFF1A;&#x3000;pcitc  &#x6240;&#x6709;linux&#x670D;&#x52A1;&#x5668;&#x901A;&#x7528;</li>
+<li>ip&#x5730;&#x5740;&#xFF1A;&#x3000;&#x6D4B;&#x8BD5;&#x73AF;&#x5883; 192.168.0.203&#x3000;&#x751F;&#x4EA7;&#x73AF;&#x5883; 192.168.0.202</li>
+<li>&#x6240;&#x6709;&#x670D;&#x52A1;&#x5668;&#x5747;&#x5B89;&#x88C5;openssh&#x3000;&#x767B;&#x5F55;&#x7AEF;&#x53E3;22</li>
+</ol>
+<h3 id="redis-&#x505C;&#x542F;&#x52A8;">redis &#x505C;&#x542F;&#x52A8;</h3>
+<p>redis &#x5B58;&#x653E;&#x8DEF;&#x5F84;/home/develop/tools/redis-4.0.6/src
+&#x542F;&#x52A8;&#x547D;&#x4EE4;&#xFF1A;&#x3000;./redis-server &amp;</p>
+<h3 id="hadoop&#x542F;&#x52A8;">hadoop&#x542F;&#x52A8;</h3>
+<p>hadoop &#x8DEF;&#x5F84;: /home/develop/tools/hadoop-3.0.0/sbin
+&#x542F;&#x52A8;&#x547D;&#x4EE4;&#xFF1A;./start-dfs.sh</p>
+<h3 id="activemq-&#x542F;&#x52A8;">activemq &#x542F;&#x52A8;</h3>
+<p>activemq &#x8DEF;&#x5F84;&#xFF1A;/home/develop/tools/apache-activemq-5.15.3/bin
+&#x542F;&#x52A8;&#x547D;&#x4EE4;&#xFF1A;./activemq start</p>
+<h3 id="&#x5FAE;&#x670D;&#x52A1;&#x542F;&#x52A8;">&#x5FAE;&#x670D;&#x52A1;&#x542F;&#x52A8;</h3>
+<p>&#x77ED;&#x4FE1;&#x53D1;&#x9001;&#x670D;&#x52A1;&#x8DEF;&#x5F84;&#xFF1A;&#x3000;/home/develop/microservices/sms
+&#x542F;&#x52A8;&#x547D;&#x4EE4;&#xFF1A;&#x3000;java -jar springboot-sendmsg-0.0.1-SNAPSHOT.jar &amp;
+&#x6D88;&#x606F;&#x53D1;&#x9001;&#x670D;&#x52A1;&#x8DEF;&#x5F84;&#xFF1A;/home/develop/microservices/amqmess
+&#x542F;&#x52A8;&#x547D;&#x4EE4;&#xFF1A;&#x3000;java -jar springboot-activemq-0.0.1-SNAPSHOT.jar &amp;</p>
+<h3 id="tomcat-&#x542F;&#x52A8;&#x547D;&#x4EE4;">Tomcat &#x542F;&#x52A8;&#x547D;&#x4EE4;</h3>
+<p>&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#x3000;/home/develop/tomcat8/bin
+&#x542F;&#x52A8;&#x547D;&#x4EE4;: ./startup.sh</p>
+<h3 id="jenkins-&#x6301;&#x7EED;&#x96C6;&#x6210;">jenkins &#x6301;&#x7EED;&#x96C6;&#x6210;</h3>
+<ol>
+<li>&#x8BBF;&#x95EE;&#x5730;&#x5740;&#xFF1A;&#x3000;<a href="http://192.168.0.202:8081" target="_blank">http://192.168.0.202:8081</a></li>
+<li>&#x7528;&#x6237;&#x540D;: songjia &#x5BC6;&#x7801;&#xFF1A;58songJIA58</li>
+<li>&#x5B58;&#x653E;&#x8DEF;&#x5F84; /home/develop/tools </li>
+<li>&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF1A;java -jar jenkins.war --httpPort=8081 &amp;</li>
+</ol>
+<h3 id="&#x6D4B;&#x8BD5;&#x670D;&#x52A1;&#x505C;&#x7559;123456890">&#x6D4B;&#x8BD5;&#x670D;&#x52A1;&#x505C;&#x7559;123456890</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="深入学习.md" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 深入学习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"部署说明","level":"1.6","depth":1,"previous":{"title":"深入学习","level":"1.5","depth":1,"path":"docs/深入学习.md","ref":"docs/深入学习.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/系统部署.md","mtime":"2018-05-04T05:39:59.950Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-04T05:40:11.964Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
