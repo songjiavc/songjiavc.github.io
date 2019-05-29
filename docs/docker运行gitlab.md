@@ -56,10 +56,15 @@ sudo docker run -d \      //后台运行
 # jenkins安装与配置
 jenkins 应用的插件多，需要的配置环境广，所以不太适合用docker images的方式安装，这里我们直接用jenkins的war包进行安装。
 
-    下载地址： http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+  下载地址： http://mirrors.jenkins.io/war-stable/latest/jenkins.war 
     
-    下载成功后，执行如下命令进行jenkins的启动
+    安装参考： https://jenkins.io/doc/pipeline/tour/getting-started/
+    
+    
+       下载成功后，执行如下命令进行jenkins的启动
         java -jar jenkins.war --httpPort=2000 &  //设置jenkins的访问端口，初次启动会提示有一个密码字符串,以及该字符串所在的位置。
-    jenkkins的具体配置
+## jenkins迁移
+    在jenkins_home中tar -zcvf ~/jenkins.tar.gz jobs/ users/ plugins/ config.xml 备份这些内容，然后在新启动的jenkins中解压就OK 有可能涉及到一个重新读取配置的问题。
+
 
 
