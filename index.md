@@ -1,2 +1,2 @@
 # Summary
-* [docker运行gitlab](docs/docker运行gitlab.md)
+* [docker+gitlab+jenkins 持续集成详细说明](docs/docker运行gitlab.md)
