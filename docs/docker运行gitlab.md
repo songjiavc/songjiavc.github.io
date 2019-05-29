@@ -42,11 +42,24 @@ sudo docker run -d \      //后台运行
 
 如图所示，在你要进行持续集成的项目中，选中Integrations选项，建立webhook，该webhook的地址是你 jenkins 创建project里展示的地址，如下图所示
 
+![3](../images/3.png)
 
-
-
-
-
- 
- 
+还有一个醉醉重要的内容，就是要在安装jenkins的主机上创建ssh授信证书，并将证书中的公钥地址加入到在gitlab上创建的jenkins账号的sshkey下面
+1. 创建sshkey方法
+       ssh-keygen -t rsa -C  youremail@example.com  //一路默认
+       git config--global user.name "your_account"
+	   git config –globaluser.email youremail@example.com
+       cd .ssh/ && ls
+      ![4](../images/4.png)
+2. 将公钥内容添加到gitlab的sshkey 中 如下图所示：
+![5](../images/5.png) 
 # jenkins安装与配置
+jenkins 应用的插件多，需要的配置环境广，所以不太适合用docker images的方式安装，这里我们直接用jenkins的war包进行安装。
+
+    下载地址： http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+    
+    下载成功后，执行如下命令进行jenkins的启动
+        java -jar jenkins.war --httpPort=2000 &  //设置jenkins的访问端口，初次启动会提示有一个密码字符串,以及该字符串所在的位置。
+    jenkkins的具体配置
+
+
