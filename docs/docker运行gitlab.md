@@ -64,7 +64,9 @@ jenkins 应用的插件多，需要的配置环境广，所以不太适合用doc
        下载成功后，执行如下命令进行jenkins的启动
         java -jar jenkins.war --httpPort=2000 &  //设置jenkins的访问端口，初次启动会提示有一个密码字符串,以及该字符串所在的位置。
 ## jenkins迁移
-    在jenkins_home中tar -zcvf ~/jenkins.tar.gz jobs/ users/ plugins/ config.xml 备份这些内容，然后在新启动的jenkins中解压就OK 有可能涉及到一个重新读取配置的问题。
+在jenkins_home中  
+    * tar -zcvf ~/jenkins.tar.gz jobs/ users/ plugins/ config.xml  * 
+    备份这些内容，然后在新启动的jenkins中解压就OK 有可能涉及到一个重新读取配置的问题。
 
 
 
