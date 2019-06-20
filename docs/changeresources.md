@@ -43,4 +43,11 @@ https://docker.mirrors.ustc.edu.cn
 
 https://pee6w651.mirror.aliyuncs.com
 
-
+# docker 日志启动报错处理方法
+1. 查看日志： sudo systemctl docker status ls 查看docker配置文件存放位置 ex./lib/systemd/system/docker.service
+2. 查看服务执行日志 
+   /var/log/syslog
+3. 查看配置参数文件
+   /etc/docker/daemon.json
+# ali docker 镜像加速器   
+ https://blog.csdn.net/chenjin_chenjin/article/details/86674521
