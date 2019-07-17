@@ -51,3 +51,8 @@ https://pee6w651.mirror.aliyuncs.com
    /etc/docker/daemon.json
 # ali docker 镜像加速器   
  https://blog.csdn.net/chenjin_chenjin/article/details/86674521
+
+## 更换npm源地址
+
+    vim ~/.npmrc
+    registry = http://registry.cnpmjs.org
